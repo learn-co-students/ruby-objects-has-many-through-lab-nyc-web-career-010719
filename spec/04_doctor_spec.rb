@@ -21,6 +21,7 @@ describe 'Doctor' do
       doctor_who = Doctor.new('The Doctor')
       hevydevy = Patient.new('Devin Townsend')
       appointment = doctor_who.new_appointment(hevydevy, 'Friday, January 32nd')
+      # binding.pry
       expect(doctor_who.appointments).to include(appointment)
       expect(appointment.doctor).to eq(doctor_who)
     end
