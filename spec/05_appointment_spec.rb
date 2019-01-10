@@ -18,7 +18,7 @@ describe "Appointment" do
     it "initializes with a date, patient, and doctor" do
       doctor_who = Doctor.new("The Doctor")
       hevydevy = Patient.new("Devin Townsend")
-
+      
       expect{Appointment.new("Friday, January 32nd", hevydevy, doctor_who)}.to_not raise_error
     end
   end
