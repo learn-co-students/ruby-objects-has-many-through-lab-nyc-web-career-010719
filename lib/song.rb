@@ -26,3 +26,4 @@ g1 = Genre.new("rap")
 s1 = Song.new("magna", a1, g1)
 s2 = Song.new("freebird", "clapton", "rock")
 s3 = Song.new("99 problems", a1, g1)
+binding.pry

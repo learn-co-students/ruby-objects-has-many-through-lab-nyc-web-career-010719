@@ -24,7 +24,9 @@ class Patient
   end
 
   def doctors
-    appointments.map(&:doctor)
+    self.appointments.map do |appt|
+      appt.doctor
+    end
   end
 
 end #end of class

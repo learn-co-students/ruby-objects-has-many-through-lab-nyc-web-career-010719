@@ -24,8 +24,10 @@ class Artist
   end
 
   def genres
-    songs.map(&:genre)
-
+    self.songs.map do |song|
+      song.genre
+    end
   end
 
 end #end of class
+# binding.pry
