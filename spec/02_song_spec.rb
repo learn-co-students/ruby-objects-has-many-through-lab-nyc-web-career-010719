@@ -38,7 +38,7 @@ describe "Song" do
       rap = Genre.new("rap")
       ninety_nine_problems = Song.new("99 Problems", jay_z, rap)
 
-      ninety_nine_problems.artist = jay_z
+      ninety_nine_problems.artist == jay_z
       expect(ninety_nine_problems.artist).to eq(jay_z)
     end
   end
